@@ -19,6 +19,7 @@ app.get('/post/:id', (req, res) => {
   })
 
 app.post('/post/:id', (req, res) => {
+    console.log(req.body);
     const result = {
         data: req.body,
         message: 'Post created successfully'
